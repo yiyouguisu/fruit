@@ -1,0 +1,133 @@
+<html>
+	<head>
+
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/jquery.Jcrop.js"></script>
+		<link rel="stylesheet" href="../css/jquery.Jcrop.css" type="text/css" />
+		<link rel="stylesheet" href="demo_files/demos.css" type="text/css" />
+
+		<script language="Javascript">
+
+			// Remember to invoke within jQuery(window).load(...)
+			// If you don't, Jcrop may not initialize properly
+			jQuery(window).load(function(){
+				var CutJson = {};
+				jQuery('#cropbox').Jcrop({
+					bgColor:'#333',   //选区背景色
+	                bgFade:true,      //选区背景渐显
+	                fadeTime:1000,    //背景渐显时间
+	                allowSelect:true, //是否可以选区，
+	                allowResize:true, //是否可以调整选区大小
+	                //aspectRatio: 1,     //约束比例
+	                //minSize : [120,120],
+	                // boxWidth : 200,
+	                // boxHeight : 200,
+	                onChange: showPreview,
+	                onSelect: showPreview,
+	                setSelect:[ 100, 100, 200, 200],
+				});
+
+				//提交裁剪好的图片
+        
+        $('#save-pic').click(function(){
+        	$.ajax({
+              dataType: "JSONP",
+              url : "http://passport.onethink.cn/index.php?m=service&c=avatar&a=crop&app=2&key=MDAwMDAwMDAwMIWNgmOvjYiaeY15ZbOii9uAdn%2Faf%2BClcQ",
+              data: {'crop' : CutJson},
+              success: function(data){
+                    }
+            });
+        });
+
+
+			});
+			function checkCoords() {  
+				if (parseInt(jQuery('#w').val())>0) return true;  
+				alert('请选择需要裁切的图片区域.');  
+				return false; 
+			}; 
+			// Our simple event handler, called from onChange and onSelect
+			// event handlers, as per the Jcrop invocation above
+			function showPreview(coords)
+			{
+				var CutJson = {};
+				var img_width = $('#cropbox').width();
+          		var img_height = $('#cropbox').height();
+				if (parseInt(coords.w) > 0)
+				{
+					var rx = 100 / coords.w;
+					var ry = 100 / coords.h;
+
+					jQuery('#preview').css({
+						width: Math.round(rx * img_width) + 'px',
+		                height: Math.round(ry * img_height) + 'px',
+		                marginLeft: '-' + Math.round(rx * coords.x) + 'px',
+		                marginTop: '-' + Math.round(ry * coords.y) + 'px'
+					});
+
+					var rx = 60 / coords.w;
+					var ry = 60 / coords.h;
+
+					jQuery('#preview1').css({
+						width: Math.round(rx * img_width) + 'px',
+		              	height: Math.round(ry * img_height) + 'px',
+		              	marginLeft: '-' + Math.round(rx * coords.x) + 'px',
+		              	marginTop: '-' + Math.round(ry * coords.y) + 'px'
+					});
+					CutJson = {
+			            'path' : "demo_files/flowers1.jpg",
+			            'x'    : Math.floor(coords.x),
+			            'y'    : Math.floor(coords.y),
+			            'w'    : Math.floor(coords.w),
+			            'h'    : Math.floor(coords.h)
+			        };
+			        jQuery('#x').val(coords.x); //选中区域左上角横  
+			        jQuery('#y').val(coords.y); //选中区域左上角纵坐标   
+			        jQuery('#w').val(coords.w); //选中区域的宽度  
+			        jQuery('#h').val(coords.h); //选中区域的高度 
+				}
+			}
+
+		</script>
+
+	</head>
+
+	<body>
+
+	<div id="outer">
+	<div class="jcExample">
+	<div class="article">
+
+		<h1>Jcrop - Aspect ratio lock w/ preview pane</h1>
+
+		<!-- This is the image we're attaching Jcrop to -->
+		<table>
+		<tr>
+		<td>
+		<img src="demo_files/flowers.jpg" id="cropbox" />
+		</td>
+		<td>
+		<div style="width:100px;height:100px;overflow:hidden;">
+			<img src="demo_files/flowers.jpg" id="preview" />
+		</div>
+		<div style="width:60px;height:60px;overflow:hidden;">
+			<img src="demo_files/flowers.jpg" id="preview1" />
+		</div>
+		</td>
+		</tr>
+		</table>
+		<form action="crop.php" method="post" onsubmit="return checkCoords();">
+		  <div style="margin: 20px 0;">
+		  	<input type="text" id="x" name="x" /> 
+		   	<input type="text" id="y" name="y" /> 
+		  	<input type="text" id="w" name="w" /> 
+		    <input type="text" id="h" name="h" /> 
+		    <input type="submit" value="提交"/>
+		  </div> 
+		</form> 
+	</div>
+	</div>
+	</div>
+	</body>
+
+</html>

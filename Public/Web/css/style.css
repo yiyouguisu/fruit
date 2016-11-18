@@ -1,0 +1,327 @@
+@charset "utf-8";
+/* CSS Document */
+body{ background:#f5f5f5;}
+.ipnHight80 { height:84px; }
+.ipnHight60 { height:60px; }
+.text-red { color:#ed2100;}
+.grey { color:#333;}
+.mar { margin:10px 0;} 
+.mleft{ margin-left:10px;}
+.mright { margin-right:10px;}
+
+/**********首页**********/
+
+.h_icon { background:url(../images/h_icon.png) no-repeat; display:block; height:40px; margin:0 auto;  }
+.icon1 { background-position:2px 10px; width:32px; background-size:400px;  }
+.icon2 { background-position:6px -34px; width:32px; background-size:400px; border:0; }
+.icon3 { background-position:6px -73px; width:32px; background-size:400px; border:0; }
+.icon4 { background-position:6px -110px; width:50px; background-size:400px; }
+
+.icon5 { background-position:0 -130px; width:35px; background-size:300px;}
+.icon5:hover { background-position:0 -130px; width:35px; background-size:300px;}
+.micon1 {  background-position:-47px -128px; width:35px; background-size:300px; }
+
+.icon6 { background-position:0 -180px; width:35px; background-size:300px;}
+.icon6:hover { background-position:-49px -180px; width:35px; background-size:300px;}
+.micon2 { background-position:-49px -180px; width:35px; background-size:300px;}
+
+.icon7 { background-position:0 -235px; width:35px; background-size:300px;}
+.icon7:hover { background-position:-49px -235px; width:35px; background-size:300px;}
+.micon3 { background-position:-49px -235px; width:35px; background-size:300px;}
+
+.icon8 { background-position:0 -290px; width:35px; background-size:300px;}
+.icon8:hover { background-position:-50px -290px; width:35px; background-size:300px;}
+.micon4 { background-position:-50px -290px; width:35px; background-size:300px;}
+
+.icon9 { background-position:0 -345px; width:35px; background-size:300px;}
+.icon9:hover { background-position:-52px -345px; width:35px; background-size:300px;}
+.micon5 { background-position:-52px -345px; width:35px; background-size:300px;}
+
+.moren small { color:#bc102a;}
+
+.orangeBg { background:#eeb935; display:block; }
+.orangeBg img { margin:0 auto;}
+
+.nav div { width:20% !important;}
+.nav div a { color:#666; }
+.nav_icon { background:url(../images/navicon.png) no-repeat; display:block; width:45px; height:45px; margin:0 auto; background-size:380px; }
+.navIcon1 { background-position:0 0;  }
+.navIcon2 { background-position:-75px 0; }
+.navIcon3 { background-position:-155px 0; }
+.navIcon4 { background-position:-235px 0; }
+.navIcon5 { background-position:-315px 0; }
+
+.navIcon6 { background-position:0 -66px; }
+.navIcon7 { background-position:-75px -66px; }
+.navIcon8 { background-position:-155px -66px; }
+.navIcon9 { background-position:-235px -66px; }
+.navIcon10 { background-position:-315px -66px; }
+
+.carouselBtn li { background:white; border:0;}
+.carouselBtn li.active { background:#bc102a; width:10px; height:10px;}
+
+.labelOrange { width:164px; text-align:left; }
+.btnA a { width:52px; padding:4px 0; }
+.labelOrange,.btnA a { margin-bottom:7px; }
+
+.label-tags { background:url(../images/h_icon.png) no-repeat 0 -265px; background-size:200px; padding:5px 10px; margin-right:5px; }
+
+
+.foota div { width:20% !important;}
+.foota div a {  color:#999; }
+.foota div a:hover {  color:#b11d2a; }	
+
+
+/**********内页图标**********/
+.iconSel { background:url(../images/icon.png) no-repeat; display:block; height:40px; margin:0 auto; background-size:400px;   }
+.tIcon1 { background-position:5px 7px; width:32px;  }
+.tIcon2 { background-position:10px -28px; width:32px;  }
+.tIcon3 { background-position:10px -100px; width:32px;  }
+.tIcon4 { background-position:10px -67px; width:32px;  }
+.tIcon5 { background-position:-35px 7px; width:32px;  }
+.tIcon6 { background-position:-83px 7px; width:42px;  }
+.tIcon7 { background-position:-220px 7px; width:42px; height:45px; background-size:500px;  }
+.tIcon8 { background-position:-295px 0px; width:25px; height:20px; }
+.tIcon9 { background-position:-332px 0px; width:25px; height:20px;}
+.tIcon10 { background-position:-460px 5px; width:45px; background-size:500px; }
+.tIcon11 { background-position:-310px -48px; width:30px; height:30px; background-size:500px;}
+.tIcon12 { background-position:-310px -90px; width:35px; height:30px; background-size:500px; }
+
+
+
+/**********登录注册**********/
+.tabs { margin-bottom:20px; }
+.tabs li { width:50%!important; margin:0 !important;  font-size: 18px; font-weight: normal; }
+.tabs li a { background:#edd9dc !important; color:white !important; text-align:center; border-radius:0 !important;}
+.tabs li:first-child a { border-right:1px solid #ccc; }
+.tabs .active a {  color:#990e23 !important;}
+
+.pos { position:absolute; right:2%; top:6px; z-index:99; }
+
+
+
+/**********餐厅详情**********/
+.cTable td { padding:10px 15px !important; }
+.cTable td span { margin-right:5px; }
+
+.arrow { background:url(../images/icon.png) no-repeat -140px 3px; display:block; width:15px; height:15px; margin:0 auto; background-size:400px; }
+.hot { background:url(../images/hot.jpg) no-repeat 0 -5px; display:block; width:20px; height:20px; margin:0 auto; background-size:20px; }
+
+
+/**********商品列表**********/
+.listCom .col-xs-4 { padding-right:0; border-right:1px solid #ddd; background:#f5f5f5; min-height:650px; }
+.listCom ul { border-bottom:0 !important;}
+.listCom ul li { margin-top:0 !important;}
+.listCom ul li a { border:0 !important; margin-right:0; color:#333; }
+.listCom ul li.active a { color:#bc102a !important; }
+
+.fright { padding-right:0;}
+.btnClick { border:1px solid #ddd; background:white; border-radius:15px; width:78px; height:30px;  }
+.btnClick .txt { border:0; width:20px; height:28px; text-align:center; vertical-align: super; border-left:1px solid #ddd; border-right:1px solid #ddd; }
+
+.btnClick .redIcon,.btnClick .addIcon { padding:3px 10px; background:url(../images/addred.png) no-repeat; border:0; background-size:10px;  }
+.btnClick .redIcon { background-position:7px 10px;}
+.btnClick .addIcon { background-position:5px -10px;}
+
+.slbg { background:#bc102a; border-radius:10px !important; padding:1px 4px; }
+.line1 { width:5px; height:40px; border-right:1px solid #ddd; margin:0 15px; }
+
+
+/**********商品详情**********/
+.share { background:url(../images/icon.png) no-repeat -215px 3px; display:block; width:28px; height:20px; margin:0 auto; background-size:400px; }
+.moresj { background:url(../images/icon.png) no-repeat -255px 3px; display:block; width:25px; height:20px;  background-size:400px; }
+.bg { filter:alpha(opacity=5); opacity:0.5; background:black; position:fixed; top:0; right:0; bottom:0; left:0; z-index:998; background-color:#000000;  }
+#shopping { position:relative; z-index:999;}
+
+/**********确认订单**********/
+.pay { position:relative; padding-left:0px !important; }
+.pay input { opacity:0; }
+.pay em,.checked em { position:absolute; right:0; top:0px;  display:block; width:20px; height:20px;  }
+.pay em { background:url(../images/icon.png) no-repeat -45px -75px; background-size:400px; }
+.checked em { background:url(../images/icon.png) no-repeat -45px -37px; background-size:400px; }
+
+
+/**********付款成功**********/
+.step { background:url(../images/icon.png) no-repeat; display:block; width:40px; height:40px; margin:0 auto; background-size:400px;}
+.step1 { background-position:-88px -78px; }
+.step2 { background-position:-140px -35px;}
+.step3 { background-position:-190px -35px;}
+
+.step4 { background-position:-140px -78px; }
+.step5 { background-position:-190px -78px;}
+
+
+.line2 { height:3px; border-bottom:1px solid #ddd; margin-top:20px; }
+.line3 { height:3px; border-bottom:1px solid #ff8e54; margin-top:20px; }
+.txtorange { color:#ff8e54; }
+
+
+.cct { background:url(../images/icon.png) no-repeat; display:block; width:30px; height:20px; margin:0 auto; background-size:400px;}
+.ct1 { background-position:-40px -110px; }
+.ct2 { background-position:-40px -145px;}
+
+
+
+/**********分享图标**********/
+.shicon { background:url(../images/share.png) no-repeat; display:block; width:50px; height:50px; margin:0 auto; background-size:400px; }
+.sicon1 { background-position:0 0;  }
+.sicon2 { background-position:-75px 0; }
+.sicon3 { background-position:-152px 0; }
+.sicon4 { background-position:-230px 0; }
+.sicon5 { background-position:0 -72px; }
+.sicon6 { background-position:-75px -72px; }
+.sicon7 { background-position:-153px -72px; }
+
+
+/***********霸王币********/
+.theTabs li { width:33.3%!important; margin:0 !important;  font-size: 18px; font-weight: normal; }
+.theTabs li a { background:none !important; color:#333 !important; text-align:center; border-radius:0 !important; border-right:1px solid #ccc;}
+.theTabs li:last-child a { border:0; }
+.theTabs .active a {  color:#990e23 !important;}
+
+
+
+/***********完善信息********/
+.infoTabs li { width:50% !important; margin:0 !important;  font-size: 18px; font-weight: normal; }
+.infoTabs li a { background:white !important; color:#333 !important; text-align:center; border-radius:0 !important; border-right:1px solid #ccc;}
+.infoTabs li:last-child a { border:0; }
+.infoTabs .active a {  color:#990e23 !important; border-bottom:2px solid #bc102a !important;}
+
+.none { border:0; background:none; box-shadow:none; padding-left:0;}
+
+.shl { position:absolute; left:25px; top:10px;}
+
+.btn_addPic{  display:block; position:relative; width:149px; height:160px; margin:0 auto; overflow:hidden; color:#999999; cursor:pointer; text-align:center; } 
+.btn_addPic span{display: block;line-height:39px;} 
+.btn_addPic em { 
+background:url(../images/fileimages.jpg) no-repeat center 0; background-size:100px;
+display:inline-block; width:149px; height:75px; overflow:hidden; margin-top:15px; vertical-align:middle; } 
+
+.filePrew { display:block; position:absolute; top:0; left:0; width:149px; height:160px; font-size:100px; /* 增大不同浏览器的可点击区域 */ opacity:0; /* 实现的关键点 */ filter:alpha(opacity=0);/* 兼容IE */ } 
+
+
+/***********全部餐厅********/
+.dropdown-menu { width:100%;}
+.close { position:absolute; right:10px; top:5px; z-index:99; color:#000; padding:1px 5px; border-radius:10px; background:rgba(255,255,255,.8) !important; background:white; filter:Alpha(opacity=80);opacity: 0.8; display:block; }
+
+
+/***********代金券详情********/
+.vcs_txt { position:absolute; bottom:0; left:0; width:100%; background:#000; background:rgba(0,0,0,.5) !important; filter:Alpha(opacity=50);  }
+.vcs_txt h3,.vcs_txt p { position:relative; color:white; padding-left:15px;  }
+
+.vcs_icon { background:url(../images/icon.png) no-repeat; display:block; width:30px; height:36px; background-size:500px; margin-top:-3px; }
+.vcs1 { background-position:0px -180px;}
+.vcs2 { background-position:0px -220px;}
+
+.phonecall { background:url(../images/icon.png) no-repeat -50px -215px; display:block; width:50px; height:60px; background-size:500px; margin-top:10px; }
+
+
+/***********我要订座********/
+.seatTab { border-top:1px solid #ccc; border-bottom:1px solid #ccc;}
+.seatTab li { width:50% !important; margin:0 !important;  font-size: 18px; font-weight: normal; }
+.seatTab li a { background:white !important; color:#333 !important; text-align:center; border-radius:0 !important; border-right:1px solid #ccc;}
+.seatTab li:last-child a { border:0; }
+.seatTab .active a {  color:#ff8e54 !important; border-bottom:2px solid #ff8e54 !important;}
+
+
+/***********在线订座********/
+.revise { background:url(../images/icon.png) no-repeat -110px -165px; display:block; width:55px; height:50px; background-size:500px; }
+.seldesk li { width:33.3%; float:left; text-align:center; border-right:1px solid #ddd; }
+.seldesk li .btnClick { margin:5px auto; margin-bottom:15px; }
+@media only screen and (min-width: 1000px) and (max-width: 1920px){
+.seldesk li {
+       width:20%; 
+    }
+}
+
+.selway { color:#333; cursor:pointer; }
+.selway input { opacity:0; display:none; }
+.selway em,.ckbox { display:block; width:25px; height:25px; float:left;}
+.selway em { background:url(../images/icon.png) no-repeat -128px -185px; background-size:400px;  }
+.ckbox { background:url(../images/icon.png) no-repeat -91px -185px !important; background-size:400px !important; }
+
+
+/***********在线订座********/
+.cdbtn { color:#bc102a; border:2px solid #bc102a; border-radius:30px; margin:10px auto 30px auto; display:block; }
+.cdbtn span {  background:url(../images/icon.png) no-repeat -140px -135px; background-size:400px; display:block; width:50px; height:25px; float:left;  }
+.mren { background:url(../images/icon.png) no-repeat -200px -140px; background-size:400px; display:block; width:20px; height:20px; }
+.dian { display:block; width:10px; height:10px; border-radius:5px; margin-left:5px;}
+.dred { background:#bc102a;}
+.dgrey { background:#ccc; }
+
+.linered,.linegrey { min-height:40px; display:block; margin-left:10px; margin-top:-30px;}
+.linered { border-left:1px solid #bc102a; }
+.linegrey { border-left:1px solid #ccc; }
+
+@media only screen and (min-width: 1000px) and (max-width: 1920px){
+.linered{
+       margin-top:-15px;
+
+    }
+}
+
+
+/***********商品比价********/
+.parTab li { width:50% !important; margin:0 !important;  font-size: 18px; font-weight: normal; }
+.parTab li a { background:white !important; text-align:center; border-radius:0 !important; }
+
+.pull-down { width:100%; margin-top:0;}
+.pull-down p { border-bottom:1px solid #ddd; line-height:36px; margin:0; }
+.pull-down p:last-child { border-bottom:0;}
+.pull-down a { padding-left:20px; color:#333; display:block; text-align:left !important;  }
+
+.cart { width:25px; height:20px; background-size:400px; background-position:-178px 0;}
+
+.sping { position:relative; }
+.sping a { padding:5px; position:absolute; bottom:35px; right:10px; }
+
+
+/***********商品搜索列表********/
+.listTab { background:white;}
+.listTab li { width:50% !important; margin:0 !important;  font-size: 18px; font-weight: normal; }
+.listTab li a { background:white !important; color:#333 !important; text-align:center; border-radius:0 !important; border-right:1px solid #ccc;}
+.listTab li:last-child a { border:0; }
+.listTab .active a {  color:#990e23 !important; border-bottom:2px solid #bc102a !important;}
+
+
+#gotop{ width:40px; height:40px;  position:fixed; right:10px; bottom:120px; background:url(../images/top.png) no-repeat; background-size:40px; display:none;}
+
+
+/***********邀请好友********/
+.selbox,.hrBox { display:block; width:20px; height:20px;}
+.selbox {  background:#eee; }
+.hrBox { background:url(../images/hricon.jpg) no-repeat; }
+
+
+/***********购物车********/
+.selbg,.carBox { display:block; width:20px; height:20px; margin-right:10px; }
+.selbg {  background:#eee; }
+.carBox { background:url(../images/cartsel.jpg) no-repeat; }
+.linef { border-bottom:1px dotted #ccc; padding-bottom:10px; margin-top:5px; }
+.tIcon13 { background-position:0 -310px; background-size:600px; width:30px; height:30px; margin-top:13px; }
+
+
+/***********进口水果超低价********/
+.fruTab { margin:15px 0; }
+.fruTab li {  font-weight: normal; }
+.fruTab li a { background:white !important; color:#333 !important; border:1px solid #ccc; padding:5px 15px; }
+.fruTab .active a { background:#f65e0c !important; color:white !important;}
+
+
+/***********好友提交确认订单********/
+.tIcon14 { background-position:-285px -30px; width:35px; }
+.fricon { background:url(../images/icon.png) no-repeat; background-size:500px; height:45px; width:45px; display:block; margin-right:10px; }
+.fr1 { background-position:-201px -225px;}
+.fr2 { background-position:-261px -224px;}
+.fr3 { background-position:-322px -225px;}
+
+
+
+
+
+
+
+
+
+
+

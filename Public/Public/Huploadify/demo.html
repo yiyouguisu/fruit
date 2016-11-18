@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Huploadify demo</title>
+<link rel="stylesheet" type="text/css" href="Huploadify.css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery.Huploadify.js"></script>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+$(function(){
+	var up = $('#upload').Huploadify({
+		auto:false,
+		fileTypeExts:'*.jpg;*.png;*.exe;*.mp3;*.mp4;*.zip;*.doc;*.docx;*.ppt;*.pptx;*.xls;*.xlsx;*.pdf',
+		multi:true,
+		fileSizeLimit:99999999,
+		breakPoints:true,
+		saveInfoLocal:true,
+		showUploadedPercent:false,//是否实时显示上传的百分比，如20%
+		showUploadedSize:true,
+		removeTimeout:9999999,
+		uploader:'upload.php',
+		onUploadStart:function(){
+			up.Huploadify('settings','formData', {folder:'/Uploads/images',uid:$_SESSION['uid']});
+		},
+		onUploadSuccess:function(file, data, response){
+			var data0= eval('(' + data + ')');
+			alert(data0.src+'上传成功');
+		},
+		onUploadComplete:function(file, data, response){
+			var data0= eval('(' + data + ')');
+			alert(data0.src+'上传成功ledsfasd ds');
+	    },
+	});
+});
+</script>
+</head>
+
+<body>
+<div id="upload"></div>
+</body>
+</html>

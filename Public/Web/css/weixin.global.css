@@ -1,0 +1,96 @@
+﻿/*
+ *****名称：body
+ *****说明：body全局样式
+*/
+body { font-family:"微软雅黑",arial; font-size:14px; font-weight:normal; color:#000000; background-color:#ffffff; }
+/*
+ *****名称：清空margin,padding
+ *****说明：body全局样式
+*/
+html,form,div,ul,ol,li,dl,dt,dd,img { border:0; }
+/*
+ *****名称：列表
+ *****说明：列表全局样式
+*/
+ul,ol,li { list-style:none; }
+/*
+ *****名称：a标签
+ *****说明：全局a标签样式
+*/
+a img     { border:0; }
+a         { color:#333; text-decoration:none; outline:none; blr:expression(this.onFocus=this.blur()); }
+a:hover   { color: #f00;text-decoration: underline;}
+a:focus   { -moz-outline-style: none; }
+/*
+ *****名称：标题
+ *****说明：全局标题样式
+*/
+h1,h2,h3,h4,h5,h6         { font-size:12px; font-weight:normal;}
+img,input,select,textarea { vertical-align:middle; }
+/*
+ *****名称：*
+ *****说明：文本过长，自动换行
+*/
+*{ word-break: break-all; word-wrap:break-word; margin:0; padding:0; }
+/*
+ *****名称：清空浮动
+ *****说明：清空浮动
+*/
+.clear{ clear:both; height:0px; width:100%; font-size:1px; line-height:0px; visibility:hidden; overflow:hidden;}
+div.l { float:left;  }
+div.r { float:right; }
+/*
+ *****说明：去除默认样式
+*/
+ input[type="button"], input[type="submit"], input[type="reset"],input[type="text"] {
+   -webkit-appearance: none;
+   border-radius:0px;
+}
+textarea {  -webkit-appearance: none;}   
+
+.flash-text {
+    text-align:left;
+    width: 100%;
+    overflow: hidden;
+    height: 50px;
+    line-height: 25px;
+    color: #fff;
+    position: absolute;
+    top: 140px;
+    z-index: 50;
+    font-size:15px ;
+    background-color:#000;
+    filter:alpha(opacity=50); /*IE滤镜，透明度50%*/
+    -moz-opacity:0.5; /*Firefox私有，透明度50%*/
+    opacity:0.5;/*其他，透明度50%*/
+}
+
+.flash-text span{
+    margin-top:5px;
+    width:200px;
+    margin-left:20px;
+    display:block;
+    white-space:nowrap; 
+    overflow:hidden; 
+    text-overflow:ellipsis;
+}
+
+/*弹出窗口*/
+.windowBox
+{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    position:fixed;
+    left:0px;
+    top:0px;
+    bottom:0px;
+    z-index:3;
+}
+.windowBox .backDiv { width:100%; height:100%; position:absolute; left:0px; bottom:0px; top:0px; z-index:1; background: rgba(0, 0, 0, 0.6); }
+.windowBox .ifrmDiv { width:100%; height:auto; position:absolute; left:0px; bottom:0px; z-index:2; }
+.windowBox .ifrmDiv iframe
+{
+    width:100%;
+    height:100%;
+}

@@ -1,0 +1,14 @@
+schtasks /create /sc minute /mo 1 /tn "SgxsautoPush" /tr D:\wwwroot\fruit\wwwroot\push.vbs
+schtasks /end /tn "SgxsautoPush"
+schtasks /delete /tn "SgxsautoPush" -fs
+schtasks /query /tn "SgxsautoPush"
+
+
+C:\wamp\www\fruit\trunk\fruit\push.vbs
+
+schtasks /create /sc minute /mo 1 /tn "SgxsautoPush" /tr "explorer.exe http://127.0.0.6/index.php/Api/AutoPush/push.html"
+
+
+schtasks /create /sc minute /mo 1 /tn "SgxsautoPush" /tr C:\Users\cmc\Desktop\push.vbs
+
+schtasks /create /sc minute /mo 1 /tn "SgxsautoPush" /tr D:\wwwroot\fruit\wwwroot\autoExecute\push.vbs

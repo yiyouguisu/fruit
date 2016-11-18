@@ -1,0 +1,1 @@
+a:6:{i:0;s:2:"id";i:1;s:8:"add_time";i:2;s:8:"run_time";i:3;s:9:"task_info";s:3:"_pk";s:2:"id";s:5:"_type";a:4:{s:2:"id";s:7:"int(11)";s:8:"add_time";s:8:"datetime";s:8:"run_time";s:13:"decimal(10,6)";s:9:"task_info";s:4:"text";}}

@@ -1,0 +1,3 @@
+<?php
+//000000000000a:20:{s:2:"id";s:1:"5";s:8:"username";s:6:"shuguo";s:8:"password";s:32:"0cc61d52247a5128c37bb7f47da0ad5f";s:5:"email";s:13:"test@o2o2o.me";s:8:"nickname";s:4:"test";s:3:"sex";N;s:6:"status";s:1:"1";s:9:"login_num";s:3:"377";s:14:"lastlogin_time";s:10:"1467942114";s:12:"lastlogin_ip";s:12:"222.77.55.40";s:7:"content";s:0:"";s:8:"group_id";s:1:"2";s:6:"verify";s:6:"JhLz8v";s:4:"role";s:1:"1";s:8:"reg_time";s:10:"1444292478";s:4:"head";N;s:5:"phone";N;s:8:"realname";N;s:7:"storeid";N;s:9:"role_name";s:18:"平台管理人员";}
+?>

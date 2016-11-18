@@ -1,0 +1,3 @@
+<?php
+//000000000000a:3:{i:0;a:6:{s:2:"id";s:4:"1559";s:4:"name";s:9:"鲤城区";s:8:"parentid";s:3:"245";s:11:"arrparentid";s:11:"15,245,1559";s:9:"listorder";s:1:"5";s:6:"status";s:1:"1";}i:1;a:6:{s:2:"id";s:4:"1560";s:4:"name";s:9:"丰泽区";s:8:"parentid";s:3:"245";s:11:"arrparentid";s:11:"15,245,1560";s:9:"listorder";s:1:"4";s:6:"status";s:1:"1";}i:2;a:6:{s:2:"id";s:4:"3365";s:4:"name";s:15:"清濛开发区";s:8:"parentid";s:3:"245";s:11:"arrparentid";s:11:"15,245,3365";s:9:"listorder";s:1:"3";s:6:"status";s:1:"1";}}
+?>

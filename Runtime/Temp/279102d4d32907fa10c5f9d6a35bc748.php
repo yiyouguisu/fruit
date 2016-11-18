@@ -1,0 +1,3 @@
+<?php
+//000000000000a:20:{s:2:"id";s:1:"1";s:8:"username";s:5:"admin";s:8:"password";s:32:"0119d092eef074da1c9110783df28ef9";s:5:"email";s:11:"abc@163.com";s:8:"nickname";s:5:"bajie";s:3:"sex";N;s:6:"status";s:1:"1";s:9:"login_num";s:3:"334";s:14:"lastlogin_time";s:10:"1467356863";s:12:"lastlogin_ip";s:14:"116.226.99.208";s:7:"content";s:15:"超级管理员";s:8:"group_id";s:1:"1";s:6:"verify";s:6:"cSFth6";s:4:"role";s:1:"1";s:8:"reg_time";s:10:"1449536801";s:4:"head";N;s:5:"phone";N;s:8:"realname";N;s:7:"storeid";N;s:9:"role_name";s:15:"超级管理员";}
+?>

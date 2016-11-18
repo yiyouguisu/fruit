@@ -1,0 +1,728 @@
+[ 2016-07-26T21:51:10+08:00 ] 127.0.0.1 /index.php/Admin/Order/ajax_getnewcompanyorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001746s ]
+NOTIC: [2048] Declaration of Admin\Controller\OrderController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\OrderController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM zz_order a [ RunTime:0.000262s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM zz_order a
+SQL: SELECT a.orderid FROM zz_order a left join zz_order_time b on a.orderid=b.orderid  WHERE ( a.ordertype = 3 ) AND ( b.status = 2 ) AND ( b.package_status = 0 ) AND ( b.delivery_status = 0 ) AND ( b.close_status = 0 ) AND ( b.cancel_status = 0 ) AND ( a.puid = 0 ) AND ( (a.paystyle=2 and b.pay_status=0 and ((a.ordertype=2 and a.yes_money_total>=a.total)or a.ordertype!=2)) or (a.paystyle!=2 and b.pay_status=1) or (a.iscontainsweigh=0 and b.pay_status=1) or a.iscontainsweigh=1 ) ORDER BY a.inputtime desc LIMIT 1   [ RunTime:0.001867s ]
+
+[ 2016-07-26T21:51:14+08:00 ] 127.0.0.1 /index.php/Admin/Company/info/menuid/360.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001158s ]
+NOTIC: [8] Undefined index: companyid E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\CompanyController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000497s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001168s ]
+
+[ 2016-07-26T21:51:15+08:00 ] 127.0.0.1 /index.php/Admin/Order/ajax_getnewcompanyorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+NOTIC: [2048] Declaration of Admin\Controller\OrderController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\OrderController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM zz_order a [ RunTime:0.000292s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM zz_order a
+SQL: SELECT a.orderid FROM zz_order a left join zz_order_time b on a.orderid=b.orderid  WHERE ( a.ordertype = 3 ) AND ( b.status = 2 ) AND ( b.package_status = 0 ) AND ( b.delivery_status = 0 ) AND ( b.close_status = 0 ) AND ( b.cancel_status = 0 ) AND ( a.puid = 0 ) AND ( (a.paystyle=2 and b.pay_status=0 and ((a.ordertype=2 and a.yes_money_total>=a.total)or a.ordertype!=2)) or (a.paystyle!=2 and b.pay_status=1) or (a.iscontainsweigh=0 and b.pay_status=1) or a.iscontainsweigh=1 ) ORDER BY a.inputtime desc LIMIT 1   [ RunTime:0.001730s ]
+
+[ 2016-07-26T21:51:16+08:00 ] 127.0.0.1 /index.php/Autopush/today_weblog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001422s ]
+ERR: 无法加载控制器:Autopush
+
+[ 2016-07-26T21:51:19+08:00 ] 127.0.0.1 /index.php/Admin/Party/index/menuid/257.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+SQL: SHOW COLUMNS FROM `zz_user` [ RunTime:0.025739s ]
+SQL: SHOW COLUMNS FROM `zz_activity` [ RunTime:0.057636s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zz_activity` LIMIT 1   [ RunTime:0.000599s ]
+SQL: SELECT * FROM `zz_activity` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.000625s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\PartyController.class.php 第 61 行.
+NOTIC: [8] Undefined variable: status E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\PartyController.class.php 第 67 行.
+NOTIC: [8] Undefined variable: searchtype E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\PartyController.class.php 第 68 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000393s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000750s ]
+SQL: SHOW COLUMNS FROM `zz_menu` [ RunTime:0.009152s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `id` = 257 ) ORDER BY `listorder` desc  [ RunTime:0.000685s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `parentid` = 257 ) AND ( `ismenu` = 1 ) ORDER BY `listorder` desc  [ RunTime:0.000910s ]
+NOTIC: [8] Undefined index: start_time E:\PHPWeb\fruit\trunk\fruit\Runtime\Cache\Admin\50ecdc23960f526c0aff5397cc6ac639.php 第 74 行.
+NOTIC: [8] Undefined index: end_time E:\PHPWeb\fruit\trunk\fruit\Runtime\Cache\Admin\50ecdc23960f526c0aff5397cc6ac639.php 第 76 行.
+NOTIC: [8] Undefined index: status E:\PHPWeb\fruit\trunk\fruit\Runtime\Cache\Admin\50ecdc23960f526c0aff5397cc6ac639.php 第 81 行.
+NOTIC: [8] Undefined index: status E:\PHPWeb\fruit\trunk\fruit\Runtime\Cache\Admin\50ecdc23960f526c0aff5397cc6ac639.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000905s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001073s ]
+
+[ 2016-07-26T21:51:20+08:00 ] 127.0.0.1 /index.php/Admin/ad/index/menuid/59.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001043s ]
+SQL: SHOW COLUMNS FROM `zz_adtype` [ RunTime:0.211941s ]
+SQL: SELECT * FROM `zz_adtype` ORDER BY `listorder` desc,`id` asc  [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `zz_ad` [ RunTime:0.058322s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zz_ad` WHERE ( `isadmin` = 1 ) LIMIT 1   [ RunTime:0.015328s ]
+SQL: SELECT * FROM `zz_ad` WHERE ( `isadmin` = 1 ) ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.001248s ]
+NOTIC: [8] Undefined variable: status E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\AdController.class.php 第 68 行.
+NOTIC: [8] Undefined variable: searchtype E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\AdController.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000289s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000598s ]
+SQL: SHOW COLUMNS FROM `zz_menu` [ RunTime:0.007447s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `id` = 59 ) ORDER BY `listorder` desc  [ RunTime:0.000646s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `parentid` = 59 ) AND ( `ismenu` = 1 ) ORDER BY `listorder` desc  [ RunTime:0.000851s ]
+NOTIC: [8] Undefined variable: category E:\PHPWeb\fruit\trunk\fruit\Runtime\Cache\Admin\f1ad7b90818e0440c0de844c4e25e2cd.php 第 76 行.
+NOTIC: [8] Undefined index: status E:\PHPWeb\fruit\trunk\fruit\Runtime\Cache\Admin\f1ad7b90818e0440c0de844c4e25e2cd.php 第 81 行.
+NOTIC: [8] Undefined index: status E:\PHPWeb\fruit\trunk\fruit\Runtime\Cache\Admin\f1ad7b90818e0440c0de844c4e25e2cd.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000968s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001164s ]
+
+[ 2016-07-26T21:51:21+08:00 ] 127.0.0.1 /index.php/Admin/Order/ajax_getnewcompanyorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+NOTIC: [2048] Declaration of Admin\Controller\OrderController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\OrderController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM zz_order a [ RunTime:0.000324s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM zz_order a
+SQL: SELECT a.orderid FROM zz_order a left join zz_order_time b on a.orderid=b.orderid  WHERE ( a.ordertype = 3 ) AND ( b.status = 2 ) AND ( b.package_status = 0 ) AND ( b.delivery_status = 0 ) AND ( b.close_status = 0 ) AND ( b.cancel_status = 0 ) AND ( a.puid = 0 ) AND ( (a.paystyle=2 and b.pay_status=0 and ((a.ordertype=2 and a.yes_money_total>=a.total)or a.ordertype!=2)) or (a.paystyle!=2 and b.pay_status=1) or (a.iscontainsweigh=0 and b.pay_status=1) or a.iscontainsweigh=1 ) ORDER BY a.inputtime desc LIMIT 1   [ RunTime:0.001266s ]
+
+[ 2016-07-26T21:51:22+08:00 ] 127.0.0.1 /index.php/Admin/Config/index/menuid/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001060s ]
+NOTIC: [2048] Declaration of Admin\Model\ConfigModel::_before_write() should be compatible with Think\Model::_before_write(&$data) E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Model\ConfigModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zz_config` [ RunTime:0.067253s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000481s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000933s ]
+SQL: SHOW COLUMNS FROM `zz_menu` [ RunTime:0.010014s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `id` = 9 ) ORDER BY `listorder` desc  [ RunTime:0.000813s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `parentid` = 9 ) AND ( `ismenu` = 1 ) ORDER BY `listorder` desc  [ RunTime:0.001304s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001521s ]
+
+[ 2016-07-26T21:51:24+08:00 ] 127.0.0.1 /index.php/Admin/Config/email.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+NOTIC: [2048] Declaration of Admin\Model\ConfigModel::_before_write() should be compatible with Think\Model::_before_write(&$data) E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Model\ConfigModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zz_config` [ RunTime:0.075003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000465s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001065s ]
+NOTIC: [8] Undefined index: menuid E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\PublicController.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `zz_menu` [ RunTime:0.008159s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `id` = 9 ) ORDER BY `listorder` desc  [ RunTime:0.000642s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `parentid` = 9 ) AND ( `ismenu` = 1 ) ORDER BY `listorder` desc  [ RunTime:0.000869s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079332s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000962s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001159s ]
+
+[ 2016-07-26T21:51:25+08:00 ] 127.0.0.1 /index.php/Admin/Config/template.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001088s ]
+NOTIC: [2048] Declaration of Admin\Model\ConfigModel::_before_write() should be compatible with Think\Model::_before_write(&$data) E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Model\ConfigModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zz_config` [ RunTime:0.006586s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000268s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000469s ]
+NOTIC: [8] Undefined index: menuid E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\PublicController.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `zz_menu` [ RunTime:0.006863s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `id` = 9 ) ORDER BY `listorder` desc  [ RunTime:0.000627s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `parentid` = 9 ) AND ( `ismenu` = 1 ) ORDER BY `listorder` desc  [ RunTime:0.000798s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000791s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001105s ]
+
+[ 2016-07-26T21:51:26+08:00 ] 127.0.0.1 /index.php/Admin/Order/ajax_getnewcompanyorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+NOTIC: [2048] Declaration of Admin\Controller\OrderController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\OrderController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM zz_order a [ RunTime:0.000290s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM zz_order a
+SQL: SELECT a.orderid FROM zz_order a left join zz_order_time b on a.orderid=b.orderid  WHERE ( a.ordertype = 3 ) AND ( b.status = 2 ) AND ( b.package_status = 0 ) AND ( b.delivery_status = 0 ) AND ( b.close_status = 0 ) AND ( b.cancel_status = 0 ) AND ( a.puid = 0 ) AND ( (a.paystyle=2 and b.pay_status=0 and ((a.ordertype=2 and a.yes_money_total>=a.total)or a.ordertype!=2)) or (a.paystyle!=2 and b.pay_status=1) or (a.iscontainsweigh=0 and b.pay_status=1) or a.iscontainsweigh=1 ) ORDER BY a.inputtime desc LIMIT 1   [ RunTime:0.001437s ]
+
+[ 2016-07-26T21:51:27+08:00 ] 127.0.0.1 /index.php/Admin/Config/version.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+NOTIC: [2048] Declaration of Admin\Model\ConfigModel::_before_write() should be compatible with Think\Model::_before_write(&$data) E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Model\ConfigModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zz_config` [ RunTime:0.107826s ]
+SQL: SHOW COLUMNS FROM `zz_version` [ RunTime:0.049632s ]
+SQL: SELECT * FROM `zz_version` WHERE ( type=1 and group_id=1 ) ORDER BY `inputtime` desc LIMIT 1   [ RunTime:0.000673s ]
+SQL: SELECT * FROM `zz_version` WHERE ( type=2 and group_id=1 ) ORDER BY `inputtime` desc LIMIT 1   [ RunTime:0.000554s ]
+SQL: SELECT * FROM `zz_version` WHERE ( type=1 and group_id=2 ) ORDER BY `inputtime` desc LIMIT 1   [ RunTime:0.000564s ]
+SQL: SELECT * FROM `zz_version` WHERE ( type=2 and group_id=2 ) ORDER BY `inputtime` desc LIMIT 1   [ RunTime:0.000553s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000311s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000518s ]
+NOTIC: [8] Undefined index: menuid E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\PublicController.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `zz_menu` [ RunTime:0.007421s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `id` = 9 ) ORDER BY `listorder` desc  [ RunTime:0.000741s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `parentid` = 9 ) AND ( `ismenu` = 1 ) ORDER BY `listorder` desc  [ RunTime:0.001030s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077585s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077797s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000878s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001046s ]
+
+[ 2016-07-26T21:51:29+08:00 ] 127.0.0.1 /index.php/Admin/Config/attach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+NOTIC: [2048] Declaration of Admin\Model\ConfigModel::_before_write() should be compatible with Think\Model::_before_write(&$data) E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Model\ConfigModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zz_config` [ RunTime:0.022295s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000306s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000530s ]
+NOTIC: [8] Undefined index: menuid E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\PublicController.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `zz_menu` [ RunTime:0.007375s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `id` = 9 ) ORDER BY `listorder` desc  [ RunTime:0.000764s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `parentid` = 9 ) AND ( `ismenu` = 1 ) ORDER BY `listorder` desc  [ RunTime:0.000825s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069057s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000746s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000961s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001133s ]
+
+[ 2016-07-26T21:51:31+08:00 ] 127.0.0.1 /index.php/Admin/Order/ajax_getnewcompanyorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001971s ]
+NOTIC: [2048] Declaration of Admin\Controller\OrderController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\OrderController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM zz_order a [ RunTime:0.000253s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM zz_order a
+SQL: SELECT a.orderid FROM zz_order a left join zz_order_time b on a.orderid=b.orderid  WHERE ( a.ordertype = 3 ) AND ( b.status = 2 ) AND ( b.package_status = 0 ) AND ( b.delivery_status = 0 ) AND ( b.close_status = 0 ) AND ( b.cancel_status = 0 ) AND ( a.puid = 0 ) AND ( (a.paystyle=2 and b.pay_status=0 and ((a.ordertype=2 and a.yes_money_total>=a.total)or a.ordertype!=2)) or (a.paystyle!=2 and b.pay_status=1) or (a.iscontainsweigh=0 and b.pay_status=1) or a.iscontainsweigh=1 ) ORDER BY a.inputtime desc LIMIT 1   [ RunTime:0.002002s ]
+
+[ 2016-07-26T21:51:36+08:00 ] 127.0.0.1 /index.php/Admin/Config/third.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+NOTIC: [2048] Declaration of Admin\Model\ConfigModel::_before_write() should be compatible with Think\Model::_before_write(&$data) E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Model\ConfigModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zz_config` [ RunTime:0.043234s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: menuid E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\PublicController.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `zz_menu` [ RunTime:0.011890s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `id` = 9 ) ORDER BY `listorder` desc  [ RunTime:0.000922s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `parentid` = 9 ) AND ( `ismenu` = 1 ) ORDER BY `listorder` desc  [ RunTime:0.001733s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.126100s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.126591s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001821s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002482s ]
+
+[ 2016-07-26T21:51:36+08:00 ] 127.0.0.1 /index.php/Admin/Order/ajax_getnewcompanyorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+NOTIC: [2048] Declaration of Admin\Controller\OrderController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\OrderController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM zz_order a [ RunTime:0.000316s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM zz_order a
+SQL: SELECT a.orderid FROM zz_order a left join zz_order_time b on a.orderid=b.orderid  WHERE ( a.ordertype = 3 ) AND ( b.status = 2 ) AND ( b.package_status = 0 ) AND ( b.delivery_status = 0 ) AND ( b.close_status = 0 ) AND ( b.cancel_status = 0 ) AND ( a.puid = 0 ) AND ( (a.paystyle=2 and b.pay_status=0 and ((a.ordertype=2 and a.yes_money_total>=a.total)or a.ordertype!=2)) or (a.paystyle!=2 and b.pay_status=1) or (a.iscontainsweigh=0 and b.pay_status=1) or a.iscontainsweigh=1 ) ORDER BY a.inputtime desc LIMIT 1   [ RunTime:0.001373s ]
+
+[ 2016-07-26T21:51:37+08:00 ] 127.0.0.1 /index.php/Admin/Config/service.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001114s ]
+NOTIC: [2048] Declaration of Admin\Model\ConfigModel::_before_write() should be compatible with Think\Model::_before_write(&$data) E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Model\ConfigModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zz_config` [ RunTime:0.008382s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000359s ]
+NOTIC: [8] Undefined index: menuid E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\PublicController.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `zz_menu` [ RunTime:0.008088s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `id` = 9 ) ORDER BY `listorder` desc  [ RunTime:0.000551s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `parentid` = 9 ) AND ( `ismenu` = 1 ) ORDER BY `listorder` desc  [ RunTime:0.000838s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060197s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000998s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001229s ]
+
+[ 2016-07-26T21:51:41+08:00 ] 127.0.0.1 /index.php/Admin/Order/ajax_getnewcompanyorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001373s ]
+NOTIC: [2048] Declaration of Admin\Controller\OrderController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\OrderController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM zz_order a [ RunTime:0.000246s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM zz_order a
+SQL: SELECT a.orderid FROM zz_order a left join zz_order_time b on a.orderid=b.orderid  WHERE ( a.ordertype = 3 ) AND ( b.status = 2 ) AND ( b.package_status = 0 ) AND ( b.delivery_status = 0 ) AND ( b.close_status = 0 ) AND ( b.cancel_status = 0 ) AND ( a.puid = 0 ) AND ( (a.paystyle=2 and b.pay_status=0 and ((a.ordertype=2 and a.yes_money_total>=a.total)or a.ordertype!=2)) or (a.paystyle!=2 and b.pay_status=1) or (a.iscontainsweigh=0 and b.pay_status=1) or a.iscontainsweigh=1 ) ORDER BY a.inputtime desc LIMIT 1   [ RunTime:0.001399s ]
+
+[ 2016-07-26T21:51:42+08:00 ] 127.0.0.1 /index.php/Admin/Config/share.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000142s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001939s ]
+NOTIC: [2048] Declaration of Admin\Model\ConfigModel::_before_write() should be compatible with Think\Model::_before_write(&$data) E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Model\ConfigModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zz_config` [ RunTime:0.016290s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000411s ]
+NOTIC: [8] Undefined index: menuid E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\PublicController.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `zz_menu` [ RunTime:0.007297s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `id` = 9 ) ORDER BY `listorder` desc  [ RunTime:0.000726s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `parentid` = 9 ) AND ( `ismenu` = 1 ) ORDER BY `listorder` desc  [ RunTime:0.000864s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069886s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000848s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001037s ]
+
+[ 2016-07-26T21:51:44+08:00 ] 127.0.0.1 /index.php/Admin/Config/third.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001451s ]
+NOTIC: [2048] Declaration of Admin\Model\ConfigModel::_before_write() should be compatible with Think\Model::_before_write(&$data) E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Model\ConfigModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zz_config` [ RunTime:0.054556s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000242s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000434s ]
+NOTIC: [8] Undefined index: menuid E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\PublicController.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `zz_menu` [ RunTime:0.007912s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `id` = 9 ) ORDER BY `listorder` desc  [ RunTime:0.000690s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `parentid` = 9 ) AND ( `ismenu` = 1 ) ORDER BY `listorder` desc  [ RunTime:0.000861s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038881s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000961s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000846s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001029s ]
+
+[ 2016-07-26T21:51:45+08:00 ] 127.0.0.1 /index.php/Admin/Config/attach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001325s ]
+NOTIC: [2048] Declaration of Admin\Model\ConfigModel::_before_write() should be compatible with Think\Model::_before_write(&$data) E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Model\ConfigModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zz_config` [ RunTime:0.046092s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000291s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: menuid E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\PublicController.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `zz_menu` [ RunTime:0.006897s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `id` = 9 ) ORDER BY `listorder` desc  [ RunTime:0.000638s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `parentid` = 9 ) AND ( `ismenu` = 1 ) ORDER BY `listorder` desc  [ RunTime:0.000851s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001013s ]
+
+[ 2016-07-26T21:51:46+08:00 ] 127.0.0.1 /index.php/Admin/Config/third.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001178s ]
+NOTIC: [2048] Declaration of Admin\Model\ConfigModel::_before_write() should be compatible with Think\Model::_before_write(&$data) E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Model\ConfigModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zz_config` [ RunTime:0.007317s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000233s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000480s ]
+NOTIC: [8] Undefined index: menuid E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\PublicController.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `zz_menu` [ RunTime:0.007259s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `id` = 9 ) ORDER BY `listorder` desc  [ RunTime:0.000706s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `parentid` = 9 ) AND ( `ismenu` = 1 ) ORDER BY `listorder` desc  [ RunTime:0.001065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039647s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000890s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000844s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001012s ]
+
+[ 2016-07-26T21:51:46+08:00 ] 127.0.0.1 /index.php/Admin/Order/ajax_getnewcompanyorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+NOTIC: [2048] Declaration of Admin\Controller\OrderController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\OrderController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM zz_order a [ RunTime:0.000351s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM zz_order a
+SQL: SELECT a.orderid FROM zz_order a left join zz_order_time b on a.orderid=b.orderid  WHERE ( a.ordertype = 3 ) AND ( b.status = 2 ) AND ( b.package_status = 0 ) AND ( b.delivery_status = 0 ) AND ( b.close_status = 0 ) AND ( b.cancel_status = 0 ) AND ( a.puid = 0 ) AND ( (a.paystyle=2 and b.pay_status=0 and ((a.ordertype=2 and a.yes_money_total>=a.total)or a.ordertype!=2)) or (a.paystyle!=2 and b.pay_status=1) or (a.iscontainsweigh=0 and b.pay_status=1) or a.iscontainsweigh=1 ) ORDER BY a.inputtime desc LIMIT 1   [ RunTime:0.001328s ]
+
+[ 2016-07-26T21:51:49+08:00 ] 127.0.0.1 /index.php/Admin/Config/version.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001486s ]
+NOTIC: [2048] Declaration of Admin\Model\ConfigModel::_before_write() should be compatible with Think\Model::_before_write(&$data) E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Model\ConfigModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zz_config` [ RunTime:0.084547s ]
+SQL: SHOW COLUMNS FROM `zz_version` [ RunTime:0.030885s ]
+SQL: SELECT * FROM `zz_version` WHERE ( type=1 and group_id=1 ) ORDER BY `inputtime` desc LIMIT 1   [ RunTime:0.001114s ]
+SQL: SELECT * FROM `zz_version` WHERE ( type=2 and group_id=1 ) ORDER BY `inputtime` desc LIMIT 1   [ RunTime:0.000810s ]
+SQL: SELECT * FROM `zz_version` WHERE ( type=1 and group_id=2 ) ORDER BY `inputtime` desc LIMIT 1   [ RunTime:0.000760s ]
+SQL: SELECT * FROM `zz_version` WHERE ( type=2 and group_id=2 ) ORDER BY `inputtime` desc LIMIT 1   [ RunTime:0.000760s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000346s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000580s ]
+NOTIC: [8] Undefined index: menuid E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\PublicController.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `zz_menu` [ RunTime:0.011843s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `id` = 9 ) ORDER BY `listorder` desc  [ RunTime:0.000726s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `parentid` = 9 ) AND ( `ismenu` = 1 ) ORDER BY `listorder` desc  [ RunTime:0.000880s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059597s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001039s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001067s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001262s ]
+
+[ 2016-07-26T21:51:50+08:00 ] 127.0.0.1 /index.php/Admin/Config/template.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001272s ]
+NOTIC: [2048] Declaration of Admin\Model\ConfigModel::_before_write() should be compatible with Think\Model::_before_write(&$data) E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Model\ConfigModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zz_config` [ RunTime:0.085336s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000319s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000544s ]
+NOTIC: [8] Undefined index: menuid E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\PublicController.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `zz_menu` [ RunTime:0.015884s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `id` = 9 ) ORDER BY `listorder` desc  [ RunTime:0.000640s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `parentid` = 9 ) AND ( `ismenu` = 1 ) ORDER BY `listorder` desc  [ RunTime:0.000936s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064760s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065090s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001254s ]
+
+[ 2016-07-26T21:51:51+08:00 ] 127.0.0.1 /index.php/Admin/Order/ajax_getnewcompanyorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+NOTIC: [2048] Declaration of Admin\Controller\OrderController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\OrderController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM zz_order a [ RunTime:0.000430s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM zz_order a
+SQL: SELECT a.orderid FROM zz_order a left join zz_order_time b on a.orderid=b.orderid  WHERE ( a.ordertype = 3 ) AND ( b.status = 2 ) AND ( b.package_status = 0 ) AND ( b.delivery_status = 0 ) AND ( b.close_status = 0 ) AND ( b.cancel_status = 0 ) AND ( a.puid = 0 ) AND ( (a.paystyle=2 and b.pay_status=0 and ((a.ordertype=2 and a.yes_money_total>=a.total)or a.ordertype!=2)) or (a.paystyle!=2 and b.pay_status=1) or (a.iscontainsweigh=0 and b.pay_status=1) or a.iscontainsweigh=1 ) ORDER BY a.inputtime desc LIMIT 1   [ RunTime:0.001313s ]
+
+[ 2016-07-26T21:51:51+08:00 ] 127.0.0.1 /index.php/Admin/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001136s ]
+NOTIC: [2048] Declaration of Admin\Model\ConfigModel::_before_write() should be compatible with Think\Model::_before_write(&$data) E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Model\ConfigModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zz_config` [ RunTime:0.007169s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000266s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000509s ]
+NOTIC: [8] Undefined index: menuid E:\PHPWeb\fruit\trunk\fruit\Application\Admin\Controller\PublicController.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `zz_menu` [ RunTime:0.007870s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `id` = 9 ) ORDER BY `listorder` desc  [ RunTime:0.000929s ]
+SQL: SELECT `id`,`title`,`parentid`,`type`,`name` FROM `zz_menu` WHERE ( `parentid` = 9 ) AND ( `ismenu` = 1 ) ORDER BY `listorder` desc  [ RunTime:0.000974s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042536s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042957s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001487s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001449s ]
+
+[ 2016-07-26T21:51:52+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001113s ]
+SQL: SHOW COLUMNS FROM `zz_user` [ RunTime:0.007156s ]
+SQL: SHOW COLUMNS FROM `zz_menu` [ RunTime:0.008313s ]
+SQL: SHOW COLUMNS FROM `zz_adminpanel` [ RunTime:0.008356s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 27 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000815s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 28 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000705s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 94 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000669s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 270 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000918s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 267 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000906s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 174 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000983s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 175 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000742s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 197 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000724s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 180 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000660s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 188 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000988s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 207 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000855s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 236 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000687s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 239 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000809s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 253 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000770s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 276 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000795s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 385 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.001006s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 157 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000966s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 164 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000791s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 323 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000772s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 324 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000752s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 395 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000985s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 396 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000769s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 420 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000749s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 300 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000783s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 326 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000679s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 327 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000821s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 397 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000785s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 404 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.001096s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 405 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000974s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 406 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000915s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 407 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000875s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 421 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000833s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 149 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000797s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 325 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000829s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 284 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.001012s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 272 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000737s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 292 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.001358s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 305 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.001324s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 308 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.001082s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 313 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000992s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 319 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000990s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 415 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000791s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 425 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.001005s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 371 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000889s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 398 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000702s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 372 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.001076s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 374 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000824s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 375 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000779s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 376 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000892s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 377 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000774s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 382 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000737s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 380 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000741s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 381 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000899s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 383 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000720s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 409 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000741s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 391 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000837s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 410 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000987s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 379 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000936s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 337 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.001085s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 411 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000920s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 422 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000775s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 225 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.001052s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 226 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000798s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 344 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000849s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 351 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.001032s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 356 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000865s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 400 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.001009s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 403 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000921s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 360 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.001058s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 361 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000787s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 362 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000755s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 258 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.001070s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 62 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000946s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 25 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000812s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 212 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000955s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 298 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.001016s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 245 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.001099s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 246 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.001217s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 255 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000882s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 256 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000743s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 4 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000867s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 10 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.001015s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 15 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.001067s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 21 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.001058s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 22 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000748s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 117 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.001094s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 120 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.001257s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 124 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000867s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 202 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000725s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 243 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000640s ]
+SQL: SELECT * FROM `zz_menu` WHERE ( `parentid` = 368 ) AND ( `ismenu` = 1 ) AND ( `type` IN ('1','3') ) ORDER BY `listorder` DESC  [ RunTime:0.000807s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000681s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000893s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024242s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024462s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000843s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000850s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001021s ]
+
+[ 2016-07-26T21:51:54+08:00 ] 127.0.0.1 /index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001664s ]
+SQL: SHOW COLUMNS FROM `zz_user` [ RunTime:0.050577s ]
+SQL: SELECT `username` FROM `zz_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `zz_loginlog` [ RunTime:0.007136s ]
+SQL: SELECT `loginip`,`logintime` FROM `zz_loginlog` WHERE ( `username` = 'admin' ) ORDER BY `loginid` desc LIMIT 1   [ RunTime:0.000596s ]
+SQL: SHOW COLUMNS FROM `zz_order` [ RunTime:0.009409s ]
+SQL: SHOW COLUMNS FROM `zz_cooperation` [ RunTime:0.007469s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zz_cooperation` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `zz_order_feedback` [ RunTime:0.006547s ]
+SQL: SELECT * FROM `zz_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000767s ]
+SQL: SHOW COLUMNS FROM `zz_member` [ RunTime:0.008347s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000445s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020798s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001766s ]
+

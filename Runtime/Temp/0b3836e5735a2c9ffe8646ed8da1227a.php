@@ -1,0 +1,3 @@
+<?php
+//000000000000a:19:{s:2:"id";s:2:"34";s:8:"username";s:6:"qzqh01";s:8:"password";s:32:"353aa4f2a54fff992f959f3760457723";s:5:"email";s:11:"2209@qq.com";s:8:"nickname";s:12:"缺货管理";s:3:"sex";s:1:"0";s:6:"status";s:1:"1";s:9:"login_num";s:2:"29";s:14:"lastlogin_time";s:10:"1468659925";s:12:"lastlogin_ip";s:14:"116.226.99.208";s:7:"content";N;s:8:"group_id";s:1:"8";s:6:"verify";s:6:"pi74ah";s:4:"role";s:1:"6";s:8:"reg_time";s:10:"1467116504";s:4:"head";s:0:"";s:5:"phone";s:11:"13899889900";s:8:"realname";s:12:"缺货管理";s:7:"storeid";s:1:"9";}
+?>

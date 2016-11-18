@@ -1,0 +1,3 @@
+<?php
+//000000000000a:4:{i:0;a:6:{s:2:"id";s:2:"54";s:6:"menuid";s:3:"105";s:6:"userid";s:1:"5";s:4:"name";s:12:"会员列表";s:3:"url";s:39:"/index.php/Member/index/menuid/105.html";s:8:"datetime";s:10:"1467336889";}i:1;a:6:{s:2:"id";s:2:"55";s:6:"menuid";s:3:"266";s:6:"userid";s:1:"5";s:4:"name";s:12:"企业列表";s:3:"url";s:40:"/index.php/Company/index/menuid/266.html";s:8:"datetime";s:10:"1467336889";}i:2;a:6:{s:2:"id";s:2:"56";s:6:"menuid";s:3:"307";s:6:"userid";s:1:"5";s:4:"name";s:15:"包装员列表";s:3:"url";s:40:"/index.php/Store/packing/menuid/307.html";s:8:"datetime";s:10:"1467336889";}i:3;a:6:{s:2:"id";s:2:"57";s:6:"menuid";s:3:"308";s:6:"userid";s:1:"5";s:4:"name";s:15:"添加包装员";s:3:"url";s:43:"/index.php/Store/packingadd/menuid/308.html";s:8:"datetime";s:10:"1467336889";}}
+?>

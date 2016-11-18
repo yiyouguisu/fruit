@@ -1,0 +1,3 @@
+<?php
+//000000000000a:19:{s:2:"id";s:2:"23";s:8:"username";s:6:"qzcw01";s:8:"password";s:32:"012a14aa6eaaff47c794aaf89174647a";s:5:"email";s:16:"525731908@qq.com";s:8:"nickname";s:7:"qzadmin";s:3:"sex";s:1:"2";s:6:"status";s:1:"1";s:9:"login_num";s:2:"20";s:14:"lastlogin_time";s:10:"1468130102";s:12:"lastlogin_ip";s:13:"125.78.10.206";s:7:"content";N;s:8:"group_id";s:1:"5";s:6:"verify";s:6:"u1ArTk";s:4:"role";s:1:"4";s:8:"reg_time";s:10:"1453100499";s:4:"head";s:0:"";s:5:"phone";s:11:"13799568163";s:8:"realname";s:9:"张巧霞";s:7:"storeid";s:1:"9";}
+?>

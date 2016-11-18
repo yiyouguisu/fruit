@@ -1,0 +1,3 @@
+<?php
+//000000000000a:20:{s:2:"id";s:2:"36";s:8:"username";s:4:"qzck";s:8:"password";s:32:"306a2f6a427520e6a45f9c583639b82b";s:5:"email";s:11:"aa@esugo.cn";s:8:"nickname";s:21:"泉州仓库分拣员";s:3:"sex";s:1:"0";s:6:"status";s:1:"1";s:9:"login_num";s:1:"1";s:14:"lastlogin_time";s:10:"1467962891";s:12:"lastlogin_ip";s:12:"222.77.55.40";s:7:"content";s:0:"";s:8:"group_id";s:1:"9";s:6:"verify";s:6:"4Htl8d";s:4:"role";s:1:"1";s:8:"reg_time";s:10:"1467337800";s:4:"head";N;s:5:"phone";N;s:8:"realname";N;s:7:"storeid";N;s:9:"role_name";s:9:"拣货员";}
+?>
